@@ -1,7 +1,7 @@
 version: '3'
 services:
   api:
-    image: dlamarg/careertracker/my_rest_api:latest
+    image: dlamarg/careertracker/api:latest
     build: .
     ports:
       - "8000:8000"
@@ -14,7 +14,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=career_tracker_db
     ports:
-      - '5455:5432'
+      - '5457:5432'
     volumes: 
       - postgres_data:/var/lib/postgresql/data
 
