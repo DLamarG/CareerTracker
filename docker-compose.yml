@@ -2,7 +2,7 @@ version: '3'
 services:
   api:
     image: dlamarg/careertracker/api:latest
-    build: .
+    build: ./careertracker
     ports:
       - "8000:8000"
     depends_on:
