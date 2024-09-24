@@ -1,7 +1,7 @@
 version: '3'
 services:
   api:
-    image: dlamarg/assessment4/my_rest_api:latest
+    image: dlamarg/careertracker/my_rest_api:latest
     build: .
     ports:
       - "8000:8000"
